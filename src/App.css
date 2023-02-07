@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  max-width: 640px;
+  margin: 10px auto;
+}
+.completed {
+  text-decoration: line-through;
+  color: green;
+}
+.not-completed {
+  text-decoration: none;
+  color: green;
+}
+
+.task {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px 30px;
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.tasks {
+  border: 1px solid #f1f1f1;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.delete-task {
+  background:red;
+  cursor: pointer;
+  padding: 12px 19px;
+  color: white;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.modal-button {
+  background: #f1f1f1;
+  cursor: pointer;
+  padding: 12px 19px;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+.add-task-button {
+  background: green;
+  cursor: pointer;
+  padding: 12px 19px;
+  color: white;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.add-task-input {
+  width: 300px;
+  padding: 12px 19px;
+  border: 0;
+  outline: none;
+  border: 1px solid #f1f1f1;
+}
+
+.add-task {
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 20px;
+}
+
+.delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  background: rgba(255, 253, 253, 0.7);
+  z-index: 31;
+}
+.delete-modal-content {
+  width: 400px;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 9px 19px 1px #d3d3d3;
+}
